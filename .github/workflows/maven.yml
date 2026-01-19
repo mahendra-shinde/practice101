@@ -32,7 +32,7 @@ jobs:
       run: mvn -B package --file demo/pom.xml
 
     - name: Collect Artifacts
-      uses: actions/uploda-artifact@v6.0.0
+      uses: actions/upload-artifact@v6.0.0
       with:
         name: artifact
         path: demo/target/*.jar
